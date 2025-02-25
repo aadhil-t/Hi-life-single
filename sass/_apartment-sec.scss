@@ -1,0 +1,14 @@
+.apart-sec{
+    .aprt-blk{
+        display: flex;
+        .first-blk{
+            width:532px;
+            height: 900px;
+            background-color: $secondary-color;
+        }
+        .second-blk{
+            width:1068px;
+            height: 900px;
+        }
+    }
+}

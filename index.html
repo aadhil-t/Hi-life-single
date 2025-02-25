@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" media="screen">
+    <title>Hi-Life</title>
+    <link rel="icon" type="image/png" href="images/fav-icon.svg" />
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/sllick.min.js"></script>
+
+    <header class="logo-sec">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Home-banner" width="169" height="75.19">
+                <div class="qr-blk">
+                    <img src="./images/pvs-qr.svg" alt="Home-banner" >
+                    <div class="qr-detail">
+                            <h3>K-RERA Registration No</h3>
+                            <h3>K-RERA/PRJ/TSR/108/2024</h3>
+                            <h3>www.rera.kerala.gov.in</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home-banner-sec">
+        <img src="./images/home-bnr.png" alt="Home-banner">
+        <div class="container">
+            <div class="form-sec">
+                <h2>QUICK ENQUIRY</h2>
+                <form class="form" action="" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required >
+                
+                    <label for="email">Your email address</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                
+                    <label for="requirements">Requirement</label>
+                    <textarea id="requirements" name="requirements" rows="4" required></textarea>
+                
+                    <a class="enq-btn-red" href="">ENQUIRE NOW!</a>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="apart-sec">
+        <div class="aprt-blk">
+                <div class=" first-blk swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            <div class="second-blk"></div>
+        </div>
+    </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+</body>
+</html>
