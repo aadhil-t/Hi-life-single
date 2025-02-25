@@ -262,6 +262,10 @@ p, li {
   transition: 0.7s ease all;
 }
 
+.swiper-pagination {
+  top: 38% !important;
+}
+
 .logo-sec {
   padding-top: 3rem;
   position: absolute;
