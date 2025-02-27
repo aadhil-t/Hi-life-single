@@ -1,14 +1,80 @@
 .apart-sec{
-    .aprt-blk{
+    .aprt-blk {
+        width: 100%;
         display: flex;
-        .first-blk{
-            width:532px;
-            height: 900px;
+    
+        .first-blk {
+            width: calc(100% * (532 / 1600)); // Adjusted proportionally
+            // height: 900px;
             background-color: $secondary-color;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        .second-blk{
-            width:1068px;
-            height: 900px;
+        .second-blk {
+            width: calc(100% * (1068 / 1600)); // Adjusted proportionally
+            // height: 900px;
+            .scnd-head-txt{
+                h1{
+                    font-size: 4.5rem;
+                    line-height: 5rem;
+                    font-weight: 700;
+                }
+                h2{
+                    font-size: 2.6rem; 
+                    line-height: 3.047rem;
+                    font-weight: 500;
+                }
+                p{
+                    margin: 0;
+                    font-size: 1.8rem;
+                    line-height: 2.109rem;
+                    font-weight: 400;
+                }
+            }
+            .loc-blk{
+                display: flex;
+                gap: 11.6px;
+            }
+            .amenities-sec{
+                display: flex;
+                flex-direction: column;
+                .amn-blk{
+                    display: flex;
+                    gap: 8px;
+                    .amn-cnt-blk{
+                        width: 100%;
+                        max-width: 97px;
+                        gap: 18px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        p{
+                            margin: 0;
+                            font-size: 1.3rem;
+                            line-height: 1.523rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .proximity-sec{
+                display: flex;
+                flex-direction: column;
+                .pro-km-blk{
+                    display: flex;
+                }
+                .pro-blk{
+
+                }
+                .pro-sec-head{
+                }
+                .pro-cntnt{
+                    display: flex;
+                }
+            }
         }
     }
 }
