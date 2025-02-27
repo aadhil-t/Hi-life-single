@@ -39,6 +39,18 @@
             .amenities-sec{
                 display: flex;
                 flex-direction: column;
+                .amn-head{
+                    h2{
+                        font-size: 2.2rem;
+                        line-height: 2.578rem;
+                        font-weight: 400;
+                    }
+                    span{
+                        font-size: 2.2rem;
+                        line-height: 2.578rem;
+                        font-weight: 600;
+                    }
+                }
                 .amn-blk{
                     display: flex;
                     gap: 8px;
@@ -63,11 +75,40 @@
             .proximity-sec{
                 display: flex;
                 flex-direction: column;
+                .prox-head{
+                    h2{
+                        font-size: 2.2rem;
+                        line-height: 2.578rem;
+                        font-weight: 400;
+                    }
+                    span{
+                        font-size: 2.2rem;
+                        line-height: 2.578rem;
+                        font-weight: 600;
+                    }
+                }
                 .pro-km-blk{
                     display: flex;
+                    gap: 134px;
                 }
                 .pro-blk{
-
+                    .pro-sec-head{
+                        h2{
+                            font-size: 1.6rem;
+                            line-height: 1.875rem;
+                            font-weight: 400;
+                        }
+                        h3{
+                            font-size: 3rem;
+                            line-height: 3.516rem;
+                            font-weight: 500; 
+                            span{
+                                font-size: 1.6rem;
+                                line-height: 1.875rem;
+                                font-weight: 400; 
+                            }
+                        }
+                    }
                 }
                 .pro-sec-head{
                 }

@@ -435,6 +435,16 @@ p, li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.apart-sec .aprt-blk .second-blk .amenities-sec .amn-head h2 {
+  font-size: 2.2rem;
+  line-height: 2.578rem;
+  font-weight: 400;
+}
+.apart-sec .aprt-blk .second-blk .amenities-sec .amn-head span {
+  font-size: 2.2rem;
+  line-height: 2.578rem;
+  font-weight: 600;
+}
 .apart-sec .aprt-blk .second-blk .amenities-sec .amn-blk {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,10 +485,36 @@ p, li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.apart-sec .aprt-blk .second-blk .proximity-sec .prox-head h2 {
+  font-size: 2.2rem;
+  line-height: 2.578rem;
+  font-weight: 400;
+}
+.apart-sec .aprt-blk .second-blk .proximity-sec .prox-head span {
+  font-size: 2.2rem;
+  line-height: 2.578rem;
+  font-weight: 600;
+}
 .apart-sec .aprt-blk .second-blk .proximity-sec .pro-km-blk {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 134px;
+}
+.apart-sec .aprt-blk .second-blk .proximity-sec .pro-blk .pro-sec-head h2 {
+  font-size: 1.6rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+}
+.apart-sec .aprt-blk .second-blk .proximity-sec .pro-blk .pro-sec-head h3 {
+  font-size: 3rem;
+  line-height: 3.516rem;
+  font-weight: 500;
+}
+.apart-sec .aprt-blk .second-blk .proximity-sec .pro-blk .pro-sec-head h3 span {
+  font-size: 1.6rem;
+  line-height: 1.875rem;
+  font-weight: 400;
 }
 .apart-sec .aprt-blk .second-blk .proximity-sec .pro-cntnt {
   display: -webkit-box;
