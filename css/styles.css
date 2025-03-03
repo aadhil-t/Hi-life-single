@@ -682,6 +682,27 @@ p, li {
   }
 }
 
+.client-sec .client-outer {
+  padding-top: 12.2rem;
+}
+.client-sec .client-outer .client-head {
+  text-align: center;
+}
+.client-sec .client-outer .client-head h1 {
+  font-size: 4rem;
+  line-height: 4.688rem;
+  font-weight: 500;
+  padding-bottom: 9px;
+}
+.client-sec .client-outer .client-head h3 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
 .client-sec .client-outer .client-slider .swiper .swiper-button-prev:after, .client-sec .client-outer .client-slider .swiper .swiper-rtl .swiper-button-next:after {
-  content: "";
+  content: unset;
+}
+.client-sec .client-outer .client-slider .swiper .swiper-button-next:after, .client-sec .client-outer .client-slider .swiper .swiper-rtl .swiper-button-prev:after {
+  content: unset;
 }
