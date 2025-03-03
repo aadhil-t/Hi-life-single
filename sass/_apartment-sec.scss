@@ -13,6 +13,7 @@
         }
         .second-blk {
             width: calc(100% * (1068 / 1600)); // Adjusted proportionally
+            background-color: $primary-color-1;
             // height: 900px;
             .sec-outer{
                 padding-left: 62px;

@@ -403,6 +403,7 @@ p, li {
 }
 .apart-sec .aprt-blk .second-blk {
   width: 66.75%;
+  background-color: #F7F9FB;
 }
 .apart-sec .aprt-blk .second-blk .sec-outer {
   padding-left: 62px;
@@ -601,4 +602,82 @@ p, li {
 }
 .apart-sec .aprt-blk .second-blk .sec-outer .proximity-sec .pro-km-blk .pro-cntnt img {
   padding-bottom: 1.7rem;
+}
+
+.about-sec .about-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 54px;
+  padding-top: 10.1rem;
+}
+.about-sec .about-outer .about-cntnt p {
+  max-width: 64rem;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 17px;
+}
+.about-sec .about-outer .abt-points-blk .abt-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-sec .about-outer .abt-points-blk .abt-points p {
+  padding-bottom: 10px;
+}
+.about-sec .about-outer .abt-video-blk {
+  position: relative;
+}
+.about-sec .about-outer .abt-video-blk .video-blk {
+  width: 100%;
+  height: 100%;
+  max-height: 21.2rem;
+}
+.about-sec .about-outer .abt-video-blk .video-blk .slick-list {
+  margin-bottom: 5rem !important;
+}
+.about-sec .about-outer .abt-video-blk .video-blk a {
+  display: inline-block;
+  border-radius: 4rem;
+  position: relative;
+  width: 100%;
+  max-height: 21.2rem;
+}
+.about-sec .about-outer .abt-video-blk .video-blk a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-sec .about-outer .abt-video-blk .video-blk .play {
+  content: "";
+  position: absolute;
+  background-image: url("../images/play-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 5.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 90%;
+}
+@media screen and (max-width: 1280px) {
+  .about-sec .about-outer .abt-video-blk .video-blk .play {
+    background-size: 5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .about-sec .about-outer .abt-video-blk .video-blk .play {
+    background-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
 }

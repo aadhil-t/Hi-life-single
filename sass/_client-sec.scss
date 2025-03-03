@@ -1,0 +1,10 @@
+.client-sec{
+    .client-outer{
+        .client-slider{
+            .swiper{
+                .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+                    content: '';
+                }            }
+        }
+    }
+}
