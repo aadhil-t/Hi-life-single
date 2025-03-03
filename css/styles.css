@@ -681,3 +681,7 @@ p, li {
     height: 4rem;
   }
 }
+
+.client-sec .client-outer .client-slider .swiper .swiper-button-prev:after, .client-sec .client-outer .client-slider .swiper .swiper-rtl .swiper-button-next:after {
+  content: "";
+}
