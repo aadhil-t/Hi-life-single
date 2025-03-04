@@ -2,7 +2,10 @@
     .aprt-blk {
         width: 100%;
         display: flex;
-
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            width: 100%;
+        }
         .first-blk {
             width: calc(100% * (532 / 1600)); // Adjusted proportionally
             // height: 900px;
@@ -10,13 +13,22 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
         }
         .second-blk {
             width: calc(100% * (1068 / 1600)); // Adjusted proportionally
             background-color: $primary-color-1;
             // height: 900px;
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
             .sec-outer{
                 padding-left: 62px;
+                @media (max-width: $xl) {
+                    padding: 0 2rem;
+                }
                 .scnd-head-txt{
                     h1{
                         padding-top: 5.8rem;
@@ -26,6 +38,7 @@
                         font-weight: 700;
                         @media (max-width: $lg) {
                             font-size: 3rem;
+                            padding-top: 3rem;
                         }
                         @media (max-width: $md) {
                             font-size: 2.5rem;
@@ -71,6 +84,9 @@
                             font-weight: 400;
                             @media (max-width: $lg) {
                                 font-size: 1.6rem;
+                                padding-top: 1.6rem;
+                                padding-bottom: 1rem;
+                            
                             }
                         }
                         span{
@@ -88,6 +104,9 @@
                         @media (max-width: $lg) {
                             flex-wrap: wrap;
                         }
+                        @media (max-width: 425px) {
+                            justify-content: center;
+                        }
                         .amn-cnt-blk{
                             width: 100%;
                             max-width: 97px;
@@ -96,11 +115,18 @@
                             flex-direction: column;
                             align-items: center;
                             text-align: center;
+                            @media (max-width: $lg) {
+                                gap: 10px;
+                            }
                             p{
                                 margin: 0;
                                 font-size: 1.3rem;
                                 line-height: 1.523rem;
                                 font-weight: 400;
+                            }
+                            img{
+                                width: 70px;
+                                height: 70px;
                             }
                         }
                     }
@@ -117,6 +143,7 @@
                             font-weight: 400;
                             @media (max-width: $lg) {
                                 font-size: 1.6rem;
+                                padding-top: 1.6rem;
                             }
                         }
                         span{
@@ -132,8 +159,22 @@
                         display: flex;
                         gap: 134px;
                         @media (max-width: $lg) {
-                            gap: 14px;
-                           }
+                            gap: 30px;
+                        }
+                        @media (max-width: 1024px) {
+                            gap: 170px;
+                        }
+                        @media (max-width: $md) {
+                            gap: 95px;
+                        }
+                        @media (max-width: $sm) {
+                            gap: 50px;
+                            flex-wrap: wrap;       
+                        }
+                        @media (max-width: 425px) {
+                            gap: 30px;
+                            flex-wrap: wrap;       
+                        }
                     }
                     .pro-blk{
                         .pro-sec-head{

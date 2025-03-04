@@ -1,0 +1,90 @@
+.villa-sec{
+    .villa-outer{
+        h1{
+            text-align: center;
+            padding-top: 10rem;
+            padding-bottom: 3.1rem;
+            font-size: 4.5rem;
+            line-height: 5.273rem;
+            font-weight: 400;
+        }
+        span{
+            font-size: 4.5rem;
+            line-height: 5.273rem;
+            font-weight: 700
+        }
+        .pristine-blk{
+            display: flex;
+            justify-content: center;
+            .prist-first-blk{
+                .prist-blk{
+                    display: flex;
+                    .prist-txt{
+                        background-color: $secondary-color-3;
+                        h3{
+                            // padding-top: 2.6rem;
+                            padding: 26px 30px 6px 30px;
+                            font-size: 4rem;
+                            line-height: 5rem;
+                            font-weight: 700;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 2rem;
+                            line-height: 2.344rem;
+                            font-weight: 500;
+                            padding-bottom: 2.5rem;
+                            padding-left: 3.1rem;
+                        }
+                    }
+                }
+            }
+            .villa-qr-blk{
+                display: flex;
+                gap: 13px;
+                background-color: $secondary-color-2;
+                img{
+                    padding-left: 30px;
+                    padding-top: 30px;
+                }
+                .qr-detail{
+                    padding-top: 30px !important;
+                    padding: 2px;
+                    h3{
+                        list-style: none;
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                        font-weight: 400;
+                        text-align: start;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+        .villa-knowmore {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .villa-bg {
+            position: relative;
+        }
+        
+        .villa-bg img {
+            display: block;
+            width: 100%;
+            padding-bottom: 10rem;
+        }
+        
+        .enq-btn-blue {
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         
+        }
+        
+    }
+}

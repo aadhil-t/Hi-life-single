@@ -1,0 +1,11 @@
+.foot-sec{
+    background-color: $secondary-color-4;
+    .foot-outer{
+        .foot-blk{
+            padding-top: 4.1rem;
+            padding-bottom: 4.8rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

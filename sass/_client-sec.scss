@@ -24,6 +24,31 @@
                 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
                     content: unset;
                 }    
+
+                .swiper-wrapper{
+                    display: flex;
+                    gap: 20px;
+                    .swiper-slide{
+                        // background-color: ;
+                        box-shadow: 0px 10px 35px 0px #2C3E4F1A;
+                        width: 413px !important;
+                        display: flex;
+                        flex-direction: column !important;
+                        align-items: center !important;
+                        p{
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            line-height: 3.2rem;
+                            max-width: 31rem;
+                        }
+                        h4{
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
     }

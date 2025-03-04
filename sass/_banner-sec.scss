@@ -33,6 +33,55 @@
             min-height: unset;
         }
     }
+    .head-txt{
+        position: absolute;
+        z-index: 1;
+        right: 35%;
+        top: 195px;
+        @media (max-width: $xxl) {
+            right: 57%;
+            top: 176px;        
+        }
+        @media (max-width: $lg) {
+            right: 63%;
+            top: 149px;       
+        }
+        h2{
+            color: $primary-color;
+            font-size: 4.5rem;
+            line-height: 5rem;
+            font-weight: 400;
+            @media (max-width: $xxl) {
+                font-size: 3.5rem;
+                line-height: 4rem;    
+            }
+            @media (max-width: $lg) {
+                font-size: 3.5rem;
+                line-height: 4rem;    
+            }
+        }
+        h1{
+            color: $primary-color;
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: 700;
+            font-weight: 400;
+            @media (max-width: $xxl) {
+                font-size: 4.5rem;
+                line-height: 4rem;    
+            }
+            @media (max-width: 1202px) {
+                font-size: 3.5rem;
+                line-height: 3rem;      
+            }
+        }
+        span{
+            color: $theme-yellow;
+            font-size: 3.5rem;
+            line-height: 5rem;
+            font-weight: 500;
+        }
+    }
     .form-sec{
         position: absolute;
         background-color: #FFFFFF;
@@ -42,7 +91,14 @@
         z-index: 1;
         right: 100px;
         top: 195px;
-
+        @media (max-width: $xxl) {
+            top: 171px;
+        }
+        @media (max-width: 1311px) {
+            padding: 25px 30px 0px 30px;
+            top: 140px;
+            right: 24px;
+        }
         h2{
             font-size: 2.6rem;
             line-height: 3.047rem;
@@ -65,9 +121,15 @@
                 height: 45px;
                 margin-bottom: 1rem;
                 border: 1px solid #169AD84D;
+                @media (max-width: $lg) {
+                    height: 30px;
+                }
             }
             textarea{
-                border: 1px solid #169AD84D;    
+                border: 1px solid #169AD84D;  
+                @media (max-width: $lg) {
+                    height: 60px;
+                }  
             }
         }
         .enq-btn-red{
