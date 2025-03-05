@@ -3,12 +3,28 @@
     position: absolute;
     z-index: 1;
     width: 100%;
+    @media (max-width: $sm) {
+        padding-top: unset;
+    }
+    @media (max-width: $lg) {
+        padding-top: 1rem;
+    }
     .logo{
         display: flex;
         justify-content: space-between;
+        img{
+            width: 100px;
+            @media (max-width: $sm) {
+                width: 72px;
+                height: 45px;            
+            }
+        }
         .qr-blk{
             display: flex;
             gap: 13px;
+            @media (max-width: $lg) {
+                align-items: center;
+            }
             .qr-detail{
                 padding: 2px;
             }
@@ -17,12 +33,51 @@
                 font-size: 1.6rem;
                 line-height: 2.4rem;
                 font-weight: 400;
+                @media (max-width: $lg) {
+                    font-size: 1rem;
+                    line-height: 1.4rem;                
+                }
+                @media (max-width: $sm) {
+                    font-size: 1rem;
+                    line-height: 1rem;                
+                }
+            }
+            img{
+                width: 50px;
+                @media (max-width: $sm) {
+                    width: 37px;
+                }
             }
         }
     }
 }
 
 .home-banner-sec{
+    .grdian{
+        position: absolute;
+        top: 74%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 35%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+        z-index: 0;
+        @media (max-width: $lg) {
+            top: 62%;
+        }
+        @media (max-width: 834px) {
+            top: 44%;
+        }
+        @media (max-width: 770px) {
+            top: 38%;
+        }
+        @media (max-width: 650px) {
+            top: 25%;
+        }
+        @media (max-width: $sm) {
+            top: 5%;
+        }
+    }
     img{
         width: 100%;
         object-fit: contain;
@@ -33,18 +88,99 @@
             min-height: unset;
         }
     }
+    .count-sec{
+        .count-outer{
+            position: absolute;
+            right: 30%;
+            top: 90%;
+            display: flex;
+            justify-content: center;
+            @media (max-width: $lg) {
+                right: 29%;
+                top: 81%;
+            }
+            @media (max-width: 834px) {
+                right: 30%;
+                top: 67%;
+            }
+            @media (max-width: 770px) {
+                top: 63%;
+            }
+            @media (max-width: 650px) {
+                top: 50%;
+                right: 29%;
+            }
+            @media (max-width: $sm) {
+                top: 33%;
+                right: 23%;
+            }
+            .count-blk{
+                padding-left: 91px;
+                padding-right: 91px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-left: 1px solid #FFE072;
+                &:first-of-type{
+                    padding-left: 0;
+                    border-left:unset;
+                }
+                &:last-of-type{
+                    padding-right: 0;
+                }
+                @media (max-width: 650px) {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+                h2{
+                    color: $primary-color;
+                    @media (max-width: $lg) {
+                        font-size: 3rem;
+                    }
+                    @media (max-width: 834px) {
+                        font-size: 2.5rem;
+                    }
+                    @media (max-width: $sm) {
+                        font-size: 1.5rem;
+                    }
+                }
+                h3{
+                    color: $primary-color;
+                    @media (max-width: $lg) {
+                        font-size: 2.5rem;
+                    }
+                    @media (max-width: 834px) {
+                        font-size: 1.5rem;                    
+                    }
+                    @media (max-width: $sm) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
     .head-txt{
         position: absolute;
         z-index: 1;
-        right: 35%;
-        top: 195px;
+        right: 40%;
+        top: 171px;
+        text-align: end;
         @media (max-width: $xxl) {
             right: 57%;
             top: 176px;        
         }
         @media (max-width: $lg) {
-            right: 63%;
-            top: 149px;       
+            right: 70%;
+            top: 109px;       
+        }
+        @media (max-width: 770px) {
+            right: 100px;
+            top: 149px;     
+        }
+        @media (max-width: $sm) {
+            right: 30px;
+            top: 95px; 
         }
         h2{
             color: $primary-color;
@@ -58,6 +194,14 @@
             @media (max-width: $lg) {
                 font-size: 3.5rem;
                 line-height: 4rem;    
+            }
+            @media (max-width: 1024px) {
+                font-size: 2.5rem;
+                line-height: 4rem;  
+            }
+            @media (max-width: 834px) {
+                font-size: 2rem;
+                line-height: 3rem;
             }
         }
         h1{
@@ -74,12 +218,28 @@
                 font-size: 3.5rem;
                 line-height: 3rem;      
             }
+            @media (max-width: 1024px) {
+                font-size: 2.5rem;
+                line-height: 4rem;  
+            }
+            @media (max-width: 834px) {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
         }
         span{
             color: $theme-yellow;
             font-size: 3.5rem;
             line-height: 5rem;
             font-weight: 500;
+            @media (max-width: 1024px) {
+                font-size: 2.5rem;
+                line-height: 4rem;  
+            }
+            @media (max-width: 834px) {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
         }
     }
     .form-sec{
@@ -99,6 +259,26 @@
             top: 140px;
             right: 24px;
         }
+        @media (max-width: $lg) {
+            padding: 15px 20px 0px 20px;
+            top: 113px;
+            right: 24px;
+        }
+        @media (max-width: 834px) {
+            padding: 10px 15px 0px 15px;
+            top: 113px;
+            right: 24px;
+        }
+        @media (max-width: 770px) {
+            top: 95px;
+            padding:3rem 0 3rem 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: unset;
+            max-width: unset;
+            
+        }
         h2{
             font-size: 2.6rem;
             line-height: 3.047rem;
@@ -106,10 +286,16 @@
             color: $secondary-color-5;
             padding-bottom: 2.2rem;
             text-align: center;
+            @media (max-width: $lg) {
+                padding-bottom: 1.2rem;
+            }
         }
         .form{
             display: flex;
             flex-direction: column;
+            @media (max-width: 770px) {
+                padding: 0 50px 0 50px;
+            }
             label{
                 color: $txt-color-1;
                 font-size: 1.6rem;
@@ -122,18 +308,39 @@
                 margin-bottom: 1rem;
                 border: 1px solid #169AD84D;
                 @media (max-width: $lg) {
-                    height: 30px;
+                    height: 20px;
+                    width: 240px;                
+                }
+                @media (max-width:834px) {
+                    height: 16px;
+                    width: 215px;              
+                }
+                @media (max-width: 770px) {
+                    height: 16px;
+                    width: auto;              
                 }
             }
             textarea{
                 border: 1px solid #169AD84D;  
                 @media (max-width: $lg) {
-                    height: 60px;
+                    height:40px;
+                }  
+                @media (max-width: 834px) {
+                    height: 34px;
                 }  
             }
         }
         .enq-btn-red{
             bottom: -30px;
+            @media (max-width:770px) {
+                bottom: -15px;
+                left: 24%;                
+            }
+            @media (max-width:$sm) {
+                bottom: -15px;
+                left: 20%;    
+                max-width: 125px;            
+            }
         }
     }
 }

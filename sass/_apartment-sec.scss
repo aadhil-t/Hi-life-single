@@ -101,6 +101,7 @@
                     .amn-blk{
                         display: flex;
                         gap: 8px;
+                        justify-content: center;
                         @media (max-width: $lg) {
                             flex-wrap: wrap;
                         }
@@ -164,11 +165,11 @@
                         @media (max-width: 1024px) {
                             gap: 170px;
                         }
-                        @media (max-width: $md) {
-                            gap: 95px;
+                        @media (max-width: 904px) {
+                            gap: 110px;
                         }
                         @media (max-width: $sm) {
-                            gap: 50px;
+                            gap: 40px;
                             flex-wrap: wrap;       
                         }
                         @media (max-width: 425px) {

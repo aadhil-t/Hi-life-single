@@ -32,6 +32,10 @@
     flex-direction: column;
     padding-bottom: 92px;
     z-index: 1; 
+    @media (max-width: $sm) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .trst-txt{
         h1{
             color: $primary-color;
@@ -39,11 +43,17 @@
             font-weight: 300;
             line-height: 5.859rem;
             max-width: 86rem;
+            @media (max-width: $sm) {
+                font-size: 3rem;
+            }
         }
         span{
             font-size: 5rem;
             font-weight: 600;
             line-height: 5.859rem;
+            @media (max-width: $sm) {
+                font-size: 3rem;
+            }
         }
     }
 }

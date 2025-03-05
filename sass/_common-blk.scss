@@ -22,11 +22,19 @@
     color: $primary-color;
     // bottom: -30px;
 	&:focus,&:visited{
-		transition: 0.7s ease all;
+        transition: 0.7s ease all;
         color: $primary-color;
 		transition: 0.7s ease all;
         
-}
+    }
+    @media (max-width: $lg) {
+    font-size: 1.5rem;
+    padding: 1rem 2.3rem 1rem 2.3rem;
+    }
+    @media (max-width: $sm) {
+    font-size: 1.5rem;
+    padding: 1rem 2.3rem 1rem 2.3rem;
+    }
 }
 
 .enq-btn-blue{
@@ -57,5 +65,9 @@
         color: $primary-color;
 		transition: 0.7s ease all;
         
+}
+@media (max-width: $sm) {
+    font-size: 1.5rem;
+    padding: 1rem 2.3rem 1rem 2.3rem;
 }
 }
