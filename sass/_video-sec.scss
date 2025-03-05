@@ -1,0 +1,28 @@
+.video-sec{
+    .video-outer{
+        .video-blk{
+            display: flex;
+            .swiper{
+                .swiper-wrapper{
+                    display: flex;
+                    text-align: center;
+                    // margin-left: 200px;
+                    .swiper-slide{
+                        display: flex;
+                        width: 298px !important;
+                        margin-right: -30px;
+                        margin-left: 155px;                    
+                    }
+                }
+                .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+                    content: 'next';
+                    margin-left: 8px;
+                }
+                .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+                    content: 'prev';
+                    margin-right: -200px;
+                }
+            }
+        }
+    }
+}

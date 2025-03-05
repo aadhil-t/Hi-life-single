@@ -415,6 +415,41 @@
       </div>
     </section>
 
+    <section class="video-sec">
+      <div class="video-outer container">
+        <div class="video-blk">
+          <div>
+            <h2>Watch our <span>Video</span> commercials</h2>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/video-bg1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/video-bg2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/video-bg2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/video-bg1.png" alt="">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="images/video-bg1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/video-bg2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="trust-sec">
       <div class="trust-outer container">
         <div class="trst-txt">
@@ -517,6 +552,30 @@
         return direction;
       }
     </script>
+
+     <!-- Initialize Swiper video section -->
+  <script>
+    var video = new Swiper('.swiper', {
+      slidesPerView: 2,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          video.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
   
 </body>
 </html>
