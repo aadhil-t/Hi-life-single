@@ -45,6 +45,7 @@
             max-width: 86rem;
             @media (max-width: $sm) {
                 font-size: 3rem;
+                line-height: 4rem;
             }
         }
         span{
@@ -53,6 +54,7 @@
             line-height: 5.859rem;
             @media (max-width: $sm) {
                 font-size: 3rem;
+                line-height: 4rem;
             }
         }
     }

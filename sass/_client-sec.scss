@@ -1,6 +1,9 @@
 .client-sec{
     .client-outer{
         padding-top: 12.2rem;
+        @media (max-width: $sm) {
+            padding-top: 3rem;
+        }
         .client-head{
             text-align: center;
             h1{
@@ -8,12 +11,22 @@
                 line-height: 4.688rem;
                 font-weight: 500;
                 padding-bottom: 9px;
+                @media (max-width: 834px) {
+                    font-size: 3.5rem;                    
+                }
+                @media (max-width: $sm) {
+                    font-size: 3.2rem;
+                }
             }
             h3{
                 font-size: 2.2rem;
                 line-height: 3rem;
                 font-weight: 400;
                 padding-bottom: 30px;
+                @media (max-width: $sm) {
+                    font-size: 1.5rem;
+                    line-height: 1rem;                
+                }
             }
         }
         .client-slider{

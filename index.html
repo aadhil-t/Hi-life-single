@@ -6,18 +6,13 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="./css/styles.css" type="text/css" media="screen">
     <title>Hi-Life</title>
-    <link rel="icon" type="image/png" href="images/fav-icon.svg" />
-      <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- SWIPER STYLE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <link rel="icon" type="image/png" href="/Hi-life-single/images/fav-icon.svg" />
 </head>
 
 <body>
-    
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/sllick.min.js"></script>
-
     <header class="logo-sec">
         <div class="container">
             <div class="logo">
@@ -418,35 +413,105 @@
     <section class="video-sec">
       <div class="video-outer container">
         <div class="video-blk">
-          <div>
+          <div class="video-head">
             <h2>Watch our <span>Video</span> commercials</h2>
           </div>
-          <div class="swiper">
+          <div class="swiper mySwiper-video">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="images/video-bg1.png" alt="">
+                <div>
+                  <img src="images/video-bg1.png" alt="">
+                </div>
+                <div>
+                  <h3>Vijay Krishnan </h3>
+                  <h4>( Hi- life inspire )</h4>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="images/video-bg2.png" alt="">
+                <div>
+                  <img src="images/video-bg2.png" alt="">
+                </div>
+                <div>
+                  <h3>P G Subramannyan & Gomathi</h3>
+                  <h4>( Pristine Villas )</h4>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="images/video-bg2.png" alt="">
+                <div>
+                  <img src="images/video-bg1.png" alt="">
+                </div>
+                <div>
+                  <h3>Vijay Krishnan </h3>
+                  <h4>( Hi- life inspire )</h4>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="images/video-bg1.png" alt="">
-
+                <div>
+                  <img src="images/video-bg2.png" alt="">
+                </div>
+                <div>
+                  <h3>P G Subramannyan & Gomathi</h3>
+                  <h4>( Pristine Villas )</h4>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="images/video-bg1.png" alt="">
+                <div>
+                  <img src="images/video-bg1.png" alt="">
+                </div>
+                <div>
+                  <h3>Vijay Krishnan </h3>
+                  <h4>( Hi- life inspire )</h4>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="images/video-bg2.png" alt="">
+                <div>
+                  <img src="images/video-bg2.png" alt="">
+                </div>
+                <div>
+                  <h3>P G Subramannyan & Gomathi</h3>
+                  <h4>( Pristine Villas )</h4>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+          <div class="video-btn">
+            <div class="btn btn-next">
+              <img src="images/swiper-prev.svg" alt="">
+            </div>
+            <div class="btn btn-prev">
+              <img src="images/swiper-nxt.svg" alt="">
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="bank-sec">
+      <div class="bank-outer container">
+        
+        <div class="bank-head">
+          <h2>Approved by <span>Major Banks</span></h2>
+        </div>
+
+        <div class="bnk-blk">
+          <div class="bnk-item">
+            <img src="images/major-bank/sbi.svg" alt="">
+          </div>
+          <div class="bnk-item">
+            <img src="images/major-bank/south-indian.svg" alt="">
+          </div>
+          <div class="bnk-item">
+            <img src="images/major-bank/hdfc.svg" alt="">
+          </div>
+          <div class="bnk-item">
+            <img src="images/major-bank/baroda.svg" alt="">
+          </div>
+          <div class="bnk-item">
+            <img src="images/major-bank/canara.svg" alt="">
+          </div>
+        </div>  
+
       </div>
     </section>
 
@@ -506,6 +571,12 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        
+<!-- Then load Slick CSS and JS -->
+<script type="text/javascript" src="/Hi-life-single/js/slick.migrate.js"></script>
+<script type="text/javascript" src="/Hi-life-single/js/slick.min.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -528,54 +599,77 @@
       },
     });
   </script>
-
-    <!-- Initialize Swiper for client say section -->
+  
+    <!-- Initialize Swiper Video -->
     <script>
-      var swiper = new client('.swiper', {
-        slidesPerView: 3,
-        direction: getDirection(),
+      var swiper = new Swiper(".mySwiper-video", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true, // Enables infinite scrolling
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
         },
-        on: {
-          resize: function () {
-            swiper.changeDirection(getDirection());
-          },
-        },
+       
       });
-  
-      function getDirection() {
-        var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-  
-        return direction;
-      }
+    
+      // Assign classes to buttons
+      document.querySelector(".video-btn .btn:nth-child(1)").classList.add("btn-next");
+      document.querySelector(".video-btn .btn:nth-child(2)").classList.add("btn-prev");
     </script>
 
-     <!-- Initialize Swiper video section -->
-  <script>
-    var video = new Swiper('.swiper', {
-      slidesPerView: 2,
-      direction: getDirection(),
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      on: {
-        resize: function () {
-          video.changeDirection(getDirection());
-        },
-      },
-    });
-
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-      return direction;
-    }
-  </script>
   
+
+    <!-- Initialize Swiper for client say section -->
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  function startAutoSlide() {
+    const bankBlock = document.querySelector(".bnk-blk");
+    if (!bankBlock) return;
+
+    let scrollAmount = 0;
+    let scrollStep = 1; // Speed of scrolling
+    let maxScroll = bankBlock.scrollWidth - bankBlock.clientWidth;
+
+    function autoSlide() {
+      if (window.innerWidth <= 720) {
+        scrollAmount += scrollStep;
+        if (scrollAmount >= maxScroll) {
+          scrollAmount = 0; // Reset scroll
+        }
+        bankBlock.scrollTo({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      }
+    }
+
+    setInterval(autoSlide, 30); // Adjust speed by modifying the interval
+  }
+
+  if (window.innerWidth <= 720) {
+    startAutoSlide();
+  }
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth <= 720) {
+      startAutoSlide();
+    }
+  });
+});
+
+     </script>
+  
+    
+    <script>
+$('.multiple-items').slick({
+  infinite: true,
+  
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+    </script>
+
+
 </body>
 </html>

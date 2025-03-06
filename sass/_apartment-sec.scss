@@ -173,8 +173,9 @@
                             flex-wrap: wrap;       
                         }
                         @media (max-width: 425px) {
-                            gap: 30px;
-                            flex-wrap: wrap;       
+                            gap: 34px;
+                            flex-wrap: wrap;  
+                            justify-content: center;     
                         }
                     }
                     .pro-blk{

@@ -1,0 +1,30 @@
+.bank-sec{
+    .bank-outer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .bank-head{
+            h2{
+                @media (max-width: $sm) {
+                    padding-bottom: 3rem;
+                    font-size: 3rem;
+                }
+            }
+        }
+        .bnk-blk{
+            display: flex;
+            gap: 5.6rem;
+            align-items: center;
+            padding-top: 1.3rem;
+            padding-bottom: 10rem;
+            @media (max-width: $sm) {
+                flex-wrap: wrap;    
+                justify-content: center;
+                gap: 4rem;        
+                }
+            .bnk-items{
+
+            }
+        }
+    }
+}

@@ -21,6 +21,9 @@
             p{
                 padding-bottom: 15px;
                 margin: 0;
+                @media (max-width: $sm) {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
