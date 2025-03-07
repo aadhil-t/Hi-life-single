@@ -6,8 +6,8 @@
         .bank-head{
             h2{
                 @media (max-width: $sm) {
-                    padding-bottom: 3rem;
                     font-size: 3rem;
+                    text-align: center  ;
                 }
             }
         }
@@ -17,10 +17,11 @@
             align-items: center;
             padding-top: 1.3rem;
             padding-bottom: 10rem;
-            @media (max-width: $sm) {
+            @media (max-width: $md) {
                 flex-wrap: wrap;    
                 justify-content: center;
                 gap: 4rem;        
+                padding-bottom: 3rem;
                 }
             .bnk-items{
 
